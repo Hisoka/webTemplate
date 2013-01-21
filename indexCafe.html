@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+    Document   : html
+    Created on : January 13 2013
+    Author     : Albert Rust
+    Description: The index page.
+-->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Alpha Internet Cafe online</title>
+        <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="XMLHttpRequest.js">
+            //create a new request object
+            var request;
+            if (window.XMLHttpRequest)
+            {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+                 request=new XMLHttpRequest();
+            }
+            else
+            {
+            // code for IE6, IE5
+                 request=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            //changeHome function
+            function changeHome()
+            {
+                request.open("GET","home.html",false);
+                request.onreadystatechange=function()
+                {
+                    if(request.readyState==4)
+                        {
+                            document.getElementById('content').innerHTML=request.responseText;
+                        }
+                }
+                 request.send(null);  
+            }
+            //change services function
+            function changeServices()
+            {
+                request.open("GET","services.html",true);
+                request.onreadystatechange=function()
+                {
+                    if(request.readyState==4)
+                        {
+                            document.getElementById('content').innerHTML=request.responseText;
+                        }
+                }
+                 request.send(null);  
+            }
+            //change Trading hours function
+            function changeTrading()
+            {
+                request.open("GET","tradingHours.html",true);
+                request.onreadystatechange=function()
+                {
+                    if(request.readyState==4)
+                        {
+                            document.getElementById('content').innerHTML=request.responseText;
+                        }
+                }
+                 request.send(null);  
+            }
+            //change contact us function
+            function changeContact()
+            {
+                request.open("GET","contactUs.html",true);
+                request.onreadystatechange=function()
+                {
+                    if(request.readyState==4)
+                        {
+                            document.getElementById('content').innerHTML=request.responseText;
+                        }
+                }
+                 request.send(null);  
+            }
+            //change terms and conditions function
+            function changeTermsCond()
+            {
+                request.open("GET","termsConditions.html",true);
+                request.onreadystatechange=function()
+                {
+                    if(request.readyState==4)
+                        {
+                            document.getElementById('content').innerHTML=request.responseText;
+                        }
+                }
+                 request.send(null);  
+            }
+            //change privacy policy function
+            function changePrivPolicy()
+            {
+                request.open("GET","privacyPolicy.html",true);
+                request.onreadystatechange=function()
+                {
+                    if(request.readyState==4)
+                        {
+                            document.getElementById('content').innerHTML=request.responseText;
+                        }
+                }
+                 request.send(null);  
+            }
+            //change to work Schedule
+           function changeWorkSched()
+            {
+                request.open("GET","tempSched.html",true);
+                request.onreadystatechange=function()
+                {
+                    if(request.readyState==4)
+                        {
+                            document.getElementById('content').innerHTML=request.responseText;
+                        }
+                }
+                 request.send(null);  
+            }
+           
+           //<----->
+            
+            
+        </script>
+    </head>
+    <body onload="window.alert('Please ask for assistance with your printing!')">
+       <div id="header" >
+            <img border="0" src="images/alpha_hdr.jpg" >
+       </div>
+        <div id="menu" >
+           <table>
+				<tr>
+					<td>
+					
+						<input type="submit" value="Home" onclick="javascript:changeHome()" />
+				
+					</td>
+					<td>
+					
+						<input type="submit" value="Services" onclick="javascript:changeServices()" />
+				
+					</td>
+					<td>
+					</td>
+					<td>
+					
+						<input type="submit" value="Trading Hours" onclick="javascript:changeTrading()"/>
+					
+					</td>
+					<td>
+					
+						<input type="submit" value="Contact Us" onclick="javascript:changeContact()"/>
+					
+					</td>
+                                        <td>
+					
+						<input type="submit" value="Employee Work Schedule" onclick="javascript:changeWorkSched()"/>
+					
+					</td>
+				</tr>
+			</table>	
+       </div>
+         <div id="content" >
+           <table border="0" id="table1" width="700" >
+		<tr>
+			<td width="500" align="center" height="70">
+			<a href="http://www.google.co.za">
+			<img border="0" src="images/Google.gif" width="148" height="62"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://www.cnn.com">
+			<img border="0" src="images/cnn.gif" width="143" height="42"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://www.numetro.co.za">
+			<img border="0" src="images/NUMETRO.GIF" width="80" height="63"></a></td>
+			<td align="center" width="500" height="70">
+			<a href="http://www.mweb.co.za/">
+			<img border="0" src="images/mweb_logo.gif" width="94" height="66"></a></td>
+		</tr>
+		<tr>
+			<td width="500" align="center" height="70">
+			<a href="http://mail.google.com">
+			<img border="0" src="images/gMail.gif" width="143" height="59"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://www.hotmail.com">
+			<img border="0" src="images/HOTMAIL.JPG" width="131" height="54"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://mail.yahoo.com">
+			<img border="0" src="images/yahoomail.gif" width="141" height="48"></a></td>
+			<td align="center" width="500" height="70">
+			<a href="http://www.webmail.co.za">
+			<img border="0" src="images/WEBMAIL.GIF" width="97" height="54"></a></td>
+		</tr>
+		<tr>
+			<td width="500" align="center" height="70">
+			<a href="http://www.absa.co.za">
+			<img border="0" src="images/Absa.GIF" width="142" height="58"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://www.netbank.co.za">
+			<img border="0" src="images/nedbank.gif" width="116" height="26"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://www.standardbank.co.za">
+			<img border="0" src="images/std.gif" width="138" height="44"></a></td>
+			<td align="center" width="500" height="70">
+			<a href="http://www.fnb.co.za">
+			<img border="0" src="images/fnb.gif" width="107" height="52"></a></td>
+		</tr>
+		<tr>
+			<td width="500" align="center" height="70">
+			<a href="http://www.facebook.com/">
+			<img border="0" src="images/faceBook.gif" width="139" height="67"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://www.mtn.co.za">
+			<img border="0" src="images/mtn.bmp" width="86" height="44"></a></td>
+			<td width="500" align="center" height="70">
+			<a href="http://www.vodacom.co.za">
+			<img border="0" src="images/vodacom.gif" width="133" height="65"></a></td>
+			<td align="center" width="500" height="70">
+			<a href="http://www.familyradio.com">
+			<img border="0" src="images/FamilyRadio.GIF" width="140" height="65"></a></td>
+		</tr>
+		</table>
+       </div>
+         <div id="footer" >
+             Designed and maintained by Alpha Designs.
+            <table>
+				<tr>
+					
+					<td>
+					
+						<input type="submit" value="Terms&conditions" onclick="javascript:changeTermsCond()"/>
+					
+					</td>
+					<td>
+					</td>
+					<td>
+					
+						<input type="submit" value="Privacy Policy" onclick="javascript:changePrivPolicy()"/>
+					
+					</td>
+                                        
+				</tr>
+			</table>
+       </div>
+       </body>
+</html>
