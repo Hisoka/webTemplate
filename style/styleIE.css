@@ -1,0 +1,94 @@
+/*
+Document : stylesheet for IE9
+Created on : January 13 2013
+Author : Albert Rust
+Description: Stylesheet for Alpha Internet Cafe
+*/
+/*The body style*/
+body
+{
+   padding: 0;
+   margin:0;
+   background-color: #B2C2D1;
+   background-image: url('../images/outer.png'),url('../images/outer.png'),url('../images/leftDivider.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/inner.png'),url('../images/rightDivider.png'),url('../images/outer.png'),url('../images/outer.png');
+   background-repeat: repeat-y;
+   background-position: 0%,5%,10%,15%,20%,25%,30%,35%,40%,45%,50%,55%,60%,65%,70%,75%,80%,85%,90%,95%,100%;
+   background-attachment: fixed;
+   
+}
+/*The header style*/
+#header
+{
+   padding:2%;
+   width:746px;
+   margin-left: auto;
+   margin-right: auto;
+   height:154px;
+   
+}
+/*The menu style*/
+#menu
+{
+   padding-bottom: 2%;
+   width:500px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+/*The menu input style*/
+#menu input
+{
+    background-color: inherit;
+    color:seashell;
+    display: block;
+    border:2px;
+    border-radius:5px;
+    border-color:darkblue;
+    border-style:outset
+}
+/*The content style*/
+#content
+{
+   border-radius:5px;
+   background-color:white;
+   width:700px;
+   border-radius:5px;
+   margin-left: auto;
+   margin-right: auto;
+   opacity: 0.8;
+}
+/*The content table style*/
+#content table
+{
+    border-style:hidden;
+    
+    
+}
+/*The footer style*/
+#footer
+{
+   text-decoration:underline;
+   color:white;
+   padding-top: 5%;
+   width:300px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+/*The footer input style*/
+#footer input
+{
+    background-color: inherit;
+    color:seashell;
+    display: block;
+    border:2px;
+    border-radius:5px;
+    border-color:darkblue;
+    border-style:outset
+}
+/*The unsorted list list item style*/
+ul li
+{
+    text-decoration: underline;
+    
+}
